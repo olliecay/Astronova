@@ -1,5 +1,7 @@
 package com.dev.astronova;
 
+import com.dev.astronova.init.ModBlocks;
+import com.dev.astronova.init.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class Astronova implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.initialize();
+		ModBlocks.initialize();
 	}
 }
