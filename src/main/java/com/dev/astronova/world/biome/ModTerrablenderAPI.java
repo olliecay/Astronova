@@ -9,6 +9,6 @@ import static com.dev.astronova.Astronova.MOD_ID;
 public class ModTerrablenderAPI implements TerraBlenderApi {
     @Override
     public void onTerraBlenderInitialized() {
-        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModMaterialRules.makeRules());
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID + ":moon_surface", ModMaterialRules.makeRules());
     }
 }

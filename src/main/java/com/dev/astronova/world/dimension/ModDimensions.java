@@ -26,20 +26,21 @@ public class ModDimensions {
 
     public static void bootstrapType(Registerable<DimensionType> context) {
         context.register(MOON_TYPE, new DimensionType(
-                OptionalLong.of(20000), // Fixed time
-                false, // hasSkylight
-                false, // hasCeiling
-                false, // ultraWarm,
+                OptionalLong.of(20000),
+                false,
+                false,
+                false,
                 true,
-                1.0, // coordinateScale
-                false, // bedWorks
-                false, // respawnAnchorWorks
-                -0, // minY
-                256, // height
-                256, // logicalHeight
-                BlockTags.INFINIBURN_END, // infiburn
-                DimensionTypes.THE_END_ID, // effectsLocation
-                0.0f, // ambientLight
-                new DimensionType.MonsterSettings(false, false, UniformIntProvider.create(0, 0), 0)));
+                1.0,
+                false,
+                false,
+                0,
+                256,
+                256,
+                BlockTags.INFINIBURN_END,
+                DimensionTypes.THE_END_ID,
+                0.0f,
+                new DimensionType.MonsterSettings(false, false, UniformIntProvider.create(0, 0), 0)
+        ));
     }
 }
