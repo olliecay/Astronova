@@ -15,8 +15,10 @@ import net.minecraft.util.Identifier;
 import static com.dev.astronova.Astronova.MOD_ID;
 
 public class ModItems {
-
-
+    public static final Item REGOLITH_DUST = register(
+        new Item(new Item.Settings()),
+        "regolith_dust"
+    );
 
     public static Item register(Item item, String id) {
         // Create the identifier for the item.
@@ -41,7 +43,18 @@ public class ModItems {
 
 // Register items to the custom item group.
         ItemGroupEvents.modifyEntriesEvent(ASTRONOVA_GROUP_KEY).register(itemGroup -> {
-            itemGroup.add(Items.BLACK_CONCRETE);
+            itemGroup.add(ModBlocks.MOON_STONE.asItem());
+            itemGroup.add(ModBlocks.MOON_STONE_SLAB.asItem());
+            itemGroup.add(ModBlocks.MOON_STONE_STAIRS.asItem());
+            itemGroup.add(ModBlocks.MOON_STONE_WALL.asItem());
+
+            itemGroup.add(ModBlocks.REGOLITH_BLOCK.asItem());
+            itemGroup.add(ModItems.REGOLITH_DUST);
+
+            itemGroup.add(ModBlocks.MOON_BRICK.asItem());
+            itemGroup.add(ModBlocks.MOON_BRICK_SLAB.asItem());
+            itemGroup.add(ModBlocks.MOON_BRICK_STAIRS.asItem());
+            itemGroup.add(ModBlocks.MOON_BRICK_WALL.asItem());
         });
     }
 }

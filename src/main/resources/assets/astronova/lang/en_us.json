@@ -1,5 +1,16 @@
 {
+  "block.astronova.moon_stone": "Moon Stone",
+  "block.astronova.moon_stone_slab": "Moon Stone Slab",
+  "block.astronova.moon_stone_stairs": "Moon Stone Stairs",
+  "block.astronova.moon_stone_wall": "Moon Stone Wall",
 
+  "block.astronova.moon_brick": "Moon Bricks",
+  "block.astronova.moon_brick_slab": "Moon Bricks Slab",
+  "block.astronova.moon_brick_stairs": "Moon Bricks Stairs",
+  "block.astronova.moon_brick_wall": "Moon Bricks Wall",
+
+  "block.astronova.regolith_block": "Regolith Block",
+  "item.astronova.regolith_dust": "Regolith Dust",
 
   "itemGroup.astronovaGroup": "Astronova Group"
 }
